@@ -17,7 +17,6 @@ A CLI-based smart timetable and event management system.
 - Edit Event: ./a.exe edit
 - Delete Event: ./a.exe delete
 - User Login: ./a.exe login
-- Extra Class Update: ./a.exe extra
 
 ## How to Run
 1. Compile the code:
@@ -26,5 +25,9 @@ A CLI-based smart timetable and event management system.
    ./a.exe
 
 ## Screenshots
+![Git Log](git_log.png)
 ![Add Event](add_event.png)
+![Edit Event](edit_event.png)
+![Delete Event](delete_event.png)
 ![User Login](user_login.png)
+![Search Event](search_event.png)
