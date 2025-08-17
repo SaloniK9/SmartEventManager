@@ -40,6 +40,7 @@ void loadEvents(vector<Event> &e){
     }
 }
 
+//saves events in .csv file
 void saveEvents(const vector<Event>&e){
     ofstream f("events.csv");
     f<<"id,name,date,time,type,location,duration_hours\n";
@@ -48,6 +49,7 @@ void saveEvents(const vector<Event>&e){
         <<","<<x.location<<","<<x.duration<<"\n";
 }
 
+//checks whether there is conflict of dates and time or not
 bool conflict(const vector<Event>&ev, const Event&n){
     for(auto &e:ev){
         if(e.date==n.date){
