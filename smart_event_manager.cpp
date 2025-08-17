@@ -123,6 +123,7 @@ void deleteEvent(vector<Event>&e){
     cout<<"Deleted.\n";
 }
 
+//view all evets in the file 
 void viewAll(const vector<Event>&e){
     for(auto &x:e){
         cout<<x.id<<" | "<<x.name<<" | "<<x.date<<" "<<x.time<<" ("<<x.duration<<"hr) | "
@@ -130,6 +131,7 @@ void viewAll(const vector<Event>&e){
     }
 }
 
+//searches event in file
 void searchEv(const vector<Event>&e){
     cout<<"Keyword: "; string k; getline(cin,k);
     string low=k; transform(low.begin(),low.end(),low.begin(),::tolower);
