@@ -6,10 +6,12 @@
 #include <algorithm>
 using namespace std;
 
+//structure to define user for authentication
 struct User {
     string username, password, role;
 };
 
+//struct for events
 struct Event {
     int id;
     string name, date, time, type, location;
