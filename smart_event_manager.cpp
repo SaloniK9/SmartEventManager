@@ -70,6 +70,7 @@ void undo(vector<Event>&e){
     cout<<"Undone.\n";
 }
 
+//adding a event 
 void addEvent(vector<Event> &e){
     Event n;
     cout<<"Name: "; getline(cin,n.name);
@@ -91,6 +92,7 @@ void addEvent(vector<Event> &e){
     cout<<"Added.\n";
 }
 
+//edit existing event
 void editEvent(vector<Event> &e){
     int id; cout<<"Enter ID: "; cin>>id; cin.ignore();
     auto it=find_if(e.begin(),e.end(),[&](Event &x){return x.id==id;});
@@ -110,6 +112,7 @@ void editEvent(vector<Event> &e){
     cout<<"Updated.\n";
 }
 
+//delete existing event
 void deleteEvent(vector<Event>&e){
     int id; cout<<"Enter ID: "; cin>>id; cin.ignore();
     auto it=remove_if(e.begin(),e.end(),[&](Event&x){return x.id==id;});
