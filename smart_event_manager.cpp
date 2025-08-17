@@ -144,6 +144,7 @@ void searchEv(const vector<Event>&e){
     }
 }
 
+//loads a user into the users.csv file 
 void loadUsers(vector<User>&u){
     u.clear();
     ifstream f("users.csv");
@@ -157,6 +158,7 @@ void loadUsers(vector<User>&u){
     }
 }
 
+//logs an authorised user into the program 
 bool login(User &u){
     vector<User> all; loadUsers(all);
     cout<<"Username:"; getline(cin,u.username);
